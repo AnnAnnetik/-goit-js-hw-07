@@ -15,11 +15,21 @@ body {
 .gallery {
   
   list-style: none;
-
+  display: flex;
+  gap:24px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 
 .gallery img {
-  width: 100%;
-  height: auto;
+  display: block;
+  
+  max-width: 100%;
+height: auto;
+
+}
+.gallery li {
+  width: calc((100% - 48px) / 3);
 }
