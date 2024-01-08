@@ -1,6 +1,28 @@
 * {
   box-sizing: border-box;
 }
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 body {
   margin: 16px;
@@ -12,24 +34,208 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
 .gallery {
-  
-  list-style: none;
-  display: flex;
-  gap:24px;
-  align-items: center;
-  justify-content: center;
+  display: flex;  
   flex-wrap: wrap;
+width: 1440px;
+height: 848px;
+padding: 100px 156px;
+gap: 48px 24px;
+background: #FFF;
 }
 
 
 .gallery img {
-  display: block;
-  
-  max-width: 100%;
-height: auto;
-
+  width: 360px;
+  height: 300px;
+  flex-shrink: 0;
+  background: url(<path-to-image>), lightgray 0px -30px / 100% 120% no-repeat;
 }
 .gallery li {
-  width: calc((100% - 48px) / 3);
+  width: calc((100% - 96px) / 3);
 }
+
+h2 {
+font-family: Montserrat;
+line-height: 1.33em; 
+letter-spacing: 0.96px;
+}
+#categories {
+  display: inline-flex;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+border-radius: 8px;
+background: #FFF;
+}
+.item {
+    letter-spacing: 0.64px;
+    font-family: Montserrat;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 8px;
+background: #F6F6FE;
+
+    
+}
+.categories-menu{
+display: flex;
+gap: 8px;
+flex-direction: column;
+align-items: flex-start;
+}
+.categories-menu-elem {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  border-radius: 4px;
+border: 1px solid #808080;
+width: 360px;
+height: 40px;
+
+}
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  color: #2E2F42;
+font-family: Montserrat;
+font-size: 16px;
+line-height: 1.5em;
+letter-spacing: 0.64px;
+padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  border-radius: 4px;
+border: 1px solid #808080;
+}
+h1 {
+font-family: Montserrat;
+font-size: 24px;
+line-height: 1.33em;
+letter-spacing: 0.96px;
+padding-top: 16px;
+}
+.widget {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 16px;
+}
+.widget > p {
+font-family: Montserrat;
+letter-spacing: 0.64px;
+}
+.change-color {
+  color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+line-height: 1.5em;
+letter-spacing: 0.64px;
+padding: 8px 16px;
+border-radius: 8px;
+background: #4E75FF;
+width: 148px;
+height: 40px;
+border: none;
+}
+#controls {
+  display: flex;
+padding: 32px;
+align-items: flex-start;
+gap: 16px;
+border-radius: 8px;
+background: #F6F6FE;
+width: 486px;
+height: 104px;
+}
+#controls > input {
+  border-radius: 8px;
+border: 1px solid #808080;
+width: 150px;
+height: 40px;
+background-color: transparent;
+color: #2E2F42;
+font-family: Montserrat;
+font-size: 16px;
+letter-spacing: 0.64px;
+text-align: center;
+}
+#controls > button {
+  color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+letter-spacing: 0.64px;
+border: none;
+border-radius: 8px;
+width: 120px;
+height: 40px;
+}
+[data-create] {
+    background-color: #4E75FF;
+}
+[data-create]:hover {
+  background-color: #6C8CFF;
+}
+ [data-destroy] {
+  background-color: #FF4E4E;
+ } 
+ [data-destroy]:hover {
+  background-color: #FF7070;;
+ } 
+  #boxes {
+  display: flex;
+width: 486px;
+padding: 32px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 8px;
+background: #F6F6FE;
+margin-top: 16px;
+ }
+ .login-form {
+  display:flex;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+
+ }
+label {
+  display:flex;
+flex-direction: column;
+align-items: flex-start;
+font-family: Montserrat;
+letter-spacing: 0.64px;
+ }
+
+ .login-form > input {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+ }
+ .login-form > button {
+  color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: 0.64px;
+border-radius: 8px;
+background-color: #4E75FF;
+width: 86px;
+height: 40px;
+border: none;
+margin-top: 16px;
+ }
+ .login-form > button {
+  background-color: #6C8CFF;;
+ }

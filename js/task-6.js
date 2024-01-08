@@ -36,6 +36,3 @@ function destroyBoxes(){
   box.innerHTML = '';
   input.value='';
 };
-
-
-
